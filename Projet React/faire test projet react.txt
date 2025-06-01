@@ -1,0 +1,4 @@
+faire test projet react:
+
+- test sur la fonction reducer
+- test sur un composant 
