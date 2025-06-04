@@ -8,9 +8,6 @@ import NotFound from "./components/Product/NotFound";
 import { CartProvider } from "./components/Cart/CartContext";
 
 
-
-
-
 function App() {
   const [showCart, setShowCart] = useState(false);
 

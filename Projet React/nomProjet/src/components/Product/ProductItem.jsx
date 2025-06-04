@@ -11,7 +11,7 @@ const ProductItem = ({ product }) => {
     dispatch({
       type: "ADD",
       payload: {
-        id: product.id,
+        id: product._id,
         name: product.name,
         price: product.price,
         amount: Number(amount),
@@ -21,7 +21,7 @@ const ProductItem = ({ product }) => {
 
   return (
     <Card className="h-100">
-      <Link to={`/product/${product.id}`}>
+      <Link to={`/product/${product._id}`}>
         <Card.Img
           variant="top"
           src={product.images}
@@ -30,7 +30,7 @@ const ProductItem = ({ product }) => {
       </Link>
       <Card.Body>
         <Card.Title>
-          <Link to={`/products/${product.id}`} className="text-decoration-none">
+          <Link to={`/product/${product._id}`} className="text-decoration-none">
             {product.name}
           </Link>
         </Card.Title>
@@ -47,7 +47,7 @@ const ProductItem = ({ product }) => {
         </Button>
       </Card.Body>
       <Card.Footer>
-        <Link to={`/product/${product.id}`} className="btn btn-secondary">
+        <Link to={`/product/${product._id}`} className="btn btn-secondary">
           Voir details
         </Link>
       </Card.Footer>

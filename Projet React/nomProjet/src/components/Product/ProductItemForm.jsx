@@ -45,7 +45,7 @@ const ProductDetail = () => {
         style={{ maxWidth: "200px", height: "auto" }}
       />
       <p className="mt-3"><strong>Prix :</strong> {product.price} €</p>
-      <p><strong>Description :</strong> {product.description}</p> {/* Utilisation de descriptions */}
+      <p><strong>Description :</strong> {product.description}</p> 
       <Button variant="secondary" as={Link} to="/">
         Retour à l’accueil
       </Button>

@@ -14,7 +14,7 @@ const Products = () => {
       setError(null);
 
       try {
-        const response = await axios.get("http://localhost:3000/api/product?select=name,price,images,description");
+        const response = await axios.get("http://localhost:3000/api/product");
         setProducts(response.data.products); 
       } catch (err) {
         setError("Le serveur ne répond pas. Veuillez réessayer plus tard.");

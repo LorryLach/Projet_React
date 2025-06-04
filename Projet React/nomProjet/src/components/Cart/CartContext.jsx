@@ -2,7 +2,7 @@ import { createContext, useReducer, useContext } from "react";
 
 const CartContext = createContext();
 
-const cartReducer = (state, action) => {
+export const cartReducer = (state, action) => {
   switch (action.type) {
     case "ADD":
       const existingIndex = state.findIndex(item => item.id === action.payload.id);
@@ -21,6 +21,7 @@ const cartReducer = (state, action) => {
     default:
       return state;
   }
+  
 };
 
 export const CartProvider = ({ children }) => {

@@ -4,7 +4,6 @@ import { useCart } from "../Cart/CartContext.jsx";
 const HeaderCartButton = ({ onClick }) => {
   const { cart } = useCart();
 
-  // Calcul total d'articles dans le panier
   const totalItems = cart.reduce((acc, item) => acc + item.amount, 0);
 
   return (

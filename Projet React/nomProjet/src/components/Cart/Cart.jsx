@@ -4,7 +4,6 @@ import { useCart } from "./CartContext.jsx";
 const CartModal = ({ show, onClose }) => {
   const { cart, dispatch } = useCart();
 
-  // Calcul du montant total du panier
   const totalAmount = cart.reduce((acc, item) => acc + item.amount * item.price, 0);
 
   const handleRemove = (id) => {
